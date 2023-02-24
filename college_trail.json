@@ -4,7 +4,7 @@
 			"next_state": "choose"
 		},
 	"choose" : {
-			"content" : "Type 1 or 2 to choose your reply- 1) Hi? Who is this? 2) OMG ARE YOU HARRY STYLES!!! " ,
+			"content" : "Type 1 or 2 to choose your reply\n\n 1) Hi? Who is this? \n2) OMG ARE YOU HARRY STYLES!!! 💝 " ,
 			"next_state" : [
 					 { 
 						 "input" : "1",
