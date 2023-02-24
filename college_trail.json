@@ -1,10 +1,10 @@
 {
 	"init" : {
-			"content": "Hello! ;)",
-			"next_state": "choose"
+			"content": "Hello! 😉",
+			"next_state": "choose1"
 		},
-	"choose" : {
-			"content" : "Type 1 or 2 to choose your reply\n\n 1) Hi? Who is this? \n2) OMG ARE YOU HARRY STYLES!!! 💝 " ,
+	"choose1" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) Hi? Who is this?🤔 \n2) OMG ARE YOU HARRY STYLES!!!😫 " ,
 			"next_state" : [
 					 { 
 						 "input" : "1",
@@ -20,14 +20,156 @@
 		},
 	"path_1A" : {
 				"content" : "Sorry!! This is Harry! :) ",
-				"next_state" : "path_1B"
+				"next_state" : "choose1"
 		},
 	"path_2A" : {
 				"content": "Right...Are you one of those fans that have posters of me all over your walls ",
-				"next_state": "path_2B"
+				"next_state": "choose2"
 		},
-	"end"  : {
-			"content" : "byeeee"
+	"choose1" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) ooohhh yeahhhh, it was super loud at the concert!! I think I have hearing loss now lol 🙃 \n2) I didn't think you would ACTUALLY text me!!!😫 " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "path_1B",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2A",
+						 "point_delta" : 1
+                                        }
+				]
+		},
+		
+	"path_1B" : {
+				"content" : "Yeah sorry about that! Anyways it's nice to properly meet you darling... 😉 "
+				"next_state": "choose3"
+		},
+		
+	"choose3" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) It's nice to meet you too!🤗 I have to say the concert was absolutely amazing!!! 😍 \n2) Darling?!? I ain't your darling.... yetttt 😮‍💨" ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "path_1C",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2B",
+						 "point_delta" : -1
+                                        }
+				]
+		},
+	
+	"path_1C" : {
+			"content": "Why thank you! I think I kept coming over to you most of the time thou! 😂"
+			 "next_state" : "choose5"
+	
+	"choose2" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) Don't flatter yourself!!! 😂😏 \n2) Bruh, my whole life isn't about you just cause I went to your concert.. SHEESHHH 😒 " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "path_1B",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2B",
+						 "point_delta" : -1
+                                        }
+				]
+		},
+	"path_2B" : { 
+				"context" : "Damn your SASSY.... I like it thou....BaBy GuRl...🙈🙊"
+				"next_state": "choose4"
+		},
+		
+	"choose4" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) OH 😳.... UHHHHH.....SLOW YOUR ROLE FRUIT MAN!🍉 \n2) That was so Cringe 🥴 " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "path_1B",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2C",
+						 "point_delta" : -1
+                                        }
+				]
+		},
+		
+	"path_2C" : {
+			"content" : "Aw come on don't be like that! I know you like me.... 😏😏😏"
+			"next_state" : "almost_blocked"
+			
+		   },
+	
+	"choose5" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) I mean I didn't mind it thou... Now I want to go to all your concerts!! 😉😜 \n2) It was a lil creepy tbh.... maybe make sure you giving attention to all the paying customers next time... 💅✨ " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "path_1D",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2B",
+						 "point_delta" : -1
+                                        }
+				]
+		},
+		
+	"path_1D" : {	
+			"content" : "Hey well maybe we could arrange that? I mean I would love to see you again...😊"
+			"next_state" : "facetime_maybe"
+			
+		     },
+		
+	"facetime_maybe" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1)Absolutely!! Do you want to facetime maybe? 😋 \n2) TBH i've been playing you HEHE... 💅✨ " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "facetime",
+						 "point_delta" : 1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "path_2C",
+						 "point_delta" : -1
+                                        }
+				]
+		},  
+		
+
+	"almost_blocked" : {
+			"content" : "Type 1 or 2 to choose your reply\n 1) LOL NAH FAM! IMMA SELL YOUR NUMBER ON EBAY NOW!!!🤑🤑🤑🤑\n2) Ew absolutely NOT!!! BYEEEEE FRUIT MAN!!! 🍌 " ,
+			"next_state" : [
+					 { 
+						 "input" : "1",
+						 "next_state" : "blocked",
+						 "point_delta" : -1
+					},
+					{
+                                                 "input" : "2",
+                                                 "next_state" : "blocked",
+						 "point_delta" : -1
+                                        }
+				]
+		},  
+		
+	"facetime" : {
+			"content" : "HARRY STYLES IS FACETIMING YOU!!!😱😫😍"
+		     },
+	
+	"blocked"  : {
+			"content" : "YOU HAVE BEEN BLOCKED BY HARRY STYLES!!!😳🫣😬"
 		}
 
 }
