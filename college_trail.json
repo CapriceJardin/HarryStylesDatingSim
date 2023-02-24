@@ -20,7 +20,7 @@
 		},
 	"path_1A" : {
 				"content" : "Sorry!! This is Harry! :) ",
-				"next_state" : "path_2B"
+				"next_state" : "path_1B"
 		},
 	"path_2A" : {
 				"content": "Right...Are you one of those fans that have posters of me all over your walls ",
