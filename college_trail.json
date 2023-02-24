@@ -66,6 +66,7 @@
 	"path_1C" : {
 			"content": "Why thank you! I think I kept coming over to you most of the time thou! 😂",
 			 "next_state" : "choose5"
+	},
 	
 	"choose2" : {
 			"content" : "Type 1 or 2 to choose your reply\n 1) Don't flatter yourself!!! 😂😏 \n2) Bruh, my whole life isn't about you just cause I went to your concert.. SHEESHHH 😒 " ,
