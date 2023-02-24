@@ -1,30 +1,30 @@
 {
 	"init" : {
-			"content": "Hello there....",
+			"content": "Hello! ;)",
 			"next_state": "choose"
 		},
 	"choose" : {
-			"content" : "choose your reaction.. Type 1A or 1B",
+			"content" : "Type 1 or 2 to choose your reply- 1) Hi? Who is this? 2) OMG ARE YOU HARRY STYLES!!! " ,
 			"next_state" : [
 					 { 
-						 "input" : "1A",
+						 "input" : "1",
 						 "next_state" : "path_1A",
 						 "point_delta" : 1
 					},
 					{
-                                                 "input" : "1B",
-                                                 "next_state" : "path_1B",
+                                                 "input" : "2",
+                                                 "next_state" : "path_2A",
 						 "point_delta" : -1
                                         }
 				]
 		},
 	"path_1A" : {
-				"content" : "Why Hello! ",
-				"next_state" : "end"
+				"content" : "Sorry!! This is Harry! :) ",
+				"next_state" : "path_2B"
 		},
-	"path_1B" : {
-				"content": "WTF",
-				"next_state": "choose"
+	"path_2A" : {
+				"content": "Right...Are you one of those fans that have posters of me all over your walls ",
+				"next_state": "path_2B"
 		},
 	"end"  : {
 			"content" : "byeeee"
