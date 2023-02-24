@@ -26,7 +26,7 @@
 				"content": "Right...Are you one of those fans that have posters of me all over your walls ",
 				"next_state": "choose2"
 		},
-	"choose1" : {
+	"choose2" : {
 			"content" : "Type 1 or 2 to choose your reply\n 1) ooohhh yeahhhh, it was super loud at the concert!! I think I have hearing loss now lol 🙃 \n2) I didn't think you would ACTUALLY text me!!!😫 " ,
 			"next_state" : [
 					 { 
