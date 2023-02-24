@@ -43,7 +43,7 @@
 		},
 		
 	"path_1B" : {
-				"content" : "Yeah sorry about that! Anyways it's nice to properly meet you darling... 😉 "
+				"content" : "Yeah sorry about that! Anyways it's nice to properly meet you darling... 😉 ",
 				"next_state": "choose3"
 		},
 		
@@ -64,7 +64,7 @@
 		},
 	
 	"path_1C" : {
-			"content": "Why thank you! I think I kept coming over to you most of the time thou! 😂"
+			"content": "Why thank you! I think I kept coming over to you most of the time thou! 😂",
 			 "next_state" : "choose5"
 	
 	"choose2" : {
@@ -83,7 +83,7 @@
 				]
 		},
 	"path_2B" : { 
-				"context" : "Damn your SASSY.... I like it thou....BaBy GuRl...🙈🙊"
+				"context" : "Damn your SASSY.... I like it thou....BaBy GuRl...🙈🙊",
 				"next_state": "choose4"
 		},
 		
@@ -104,7 +104,7 @@
 		},
 		
 	"path_2C" : {
-			"content" : "Aw come on don't be like that! I know you like me.... 😏😏😏"
+			"content" : "Aw come on don't be like that! I know you like me.... 😏😏😏",
 			"next_state" : "almost_blocked"
 			
 		   },
@@ -126,7 +126,7 @@
 		},
 		
 	"path_1D" : {	
-			"content" : "Hey well maybe we could arrange that? I mean I would love to see you again...😊"
+			"content" : "Hey well maybe we could arrange that? I mean I would love to see you again...😊",
 			"next_state" : "facetime_maybe"
 			
 		     },
