@@ -143,7 +143,7 @@
 					 { 
 						 "input" : "1",
 						 "next_state" : "facetime",
-						 "point_delta" : 1
+						 "point_delta" : 1000
 					},
 					{
                                                  "input" : "2",
@@ -160,12 +160,12 @@
 					 { 
 						 "input" : "1",
 						 "next_state" : "blocked",
-						 "point_delta" : -1
+						 "point_delta" : -10000
 					},
 					{
                                                  "input" : "2",
                                                  "next_state" : "blocked",
-						 "point_delta" : -1
+						 "point_delta" : -10000
                                         }
 				]
 		},  
