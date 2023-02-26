@@ -4,13 +4,18 @@
 			"next_state": "choose1"
 		},
 	"choose1" : {
-			"content" : "Type 1 or 2 to choose your reply\n 1) Hi? Who is this?🤔 \n2) OMG ARE YOU HARRY STYLES!!!😫 " ,
+			"content" : "Type 1 or 2 or 3 to choose your reply\n 1) Hi? Who is this?🤔 \n2) OMG ARE YOU HARRY STYLES!!!😫\n3)YOU IDIOT NOW I CAN SELL YOUR NUMBER ON EBAY!!!!🤑🤑🤑🤑" ,
 			"next_state" : [
 					 { 
 						 "input" : "1",
 						 "next_state" : "path_1A",
 						 "point_delta" : 1
 					},
+					{
+                                                 "input" : "3",
+                                                 "next_state" : "blocked",
+						 "point_delta" : -1000
+                                        },
 					{
                                                  "input" : "2",
                                                  "next_state" : "path_2A",
